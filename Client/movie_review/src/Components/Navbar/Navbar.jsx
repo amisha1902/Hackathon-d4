@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <nav
-      className='navbar navbar-expand-lg bg-dark'
+      className='navbar navbar-expand-lg bg-dark pt-3 pb-3'
       data-bs-theme='dark'
     >
       <div className='container-fluid d-fle gap-3'>
@@ -24,7 +24,7 @@ function Navbar() {
 
         <Link
           className='navbar-brand text-light'
-          to='/home'
+          to='/myReviews'
         >
         My Reviews
         </Link>
@@ -36,9 +36,9 @@ function Navbar() {
         </Link>
         <Link
           className='navbar-brand text-light'
-          to='/home'
+          to='/myReviews'
         >
-        My Reviews
+        All Reviews
         </Link>
         </div>
         
@@ -52,7 +52,7 @@ function Navbar() {
               <Link
                 className='nav-link text-light'
                 aria-current='page'
-                to='/'
+                to='/editProfile'
               >
               Edit Profile
               </Link>
@@ -61,7 +61,7 @@ function Navbar() {
               <Link
                 className='nav-link'
                 aria-current='page'
-                to='/home/add-property'
+                to='/changePass'
               >
               Change Password
               </Link>
